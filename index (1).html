@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gastronomía del Mundo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #fef6e4; color: #3e3e3e; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; }
+    header { background-color: #ff7f50; color: #fff; padding: 1.5rem 2rem; text-align: center; box-shadow: 0 4px 8px rgba(255,127,80,0.4); user-select: none; }
+    header h1 { font-weight: 600; font-size: 2.5rem; letter-spacing: 1.2px; margin-bottom: 0.3rem; }
+    nav { margin-top: 0.5rem; }
+    nav a { color: #ffece1; text-decoration: none; margin: 0 1rem; font-weight: 600; transition: color 0.3s ease; }
+    nav a:hover { color: #fff; text-decoration: underline; }
+    main { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; flex-grow: 1; }
+    section { margin-bottom: 3rem; background: #fff8f0; border-radius: 12px; box-shadow: 0 6px 15px rgba(255,127,80,0.2); padding: 2rem; transition: box-shadow 0.3s ease; }
+    section:hover { box-shadow: 0 10px 25px rgba(255,127,80,0.4); }
+    section h2 { color: #ff7f50; margin-bottom: 1.5rem; border-bottom: 3px solid #ff7f50; padding-bottom: 0.5rem; font-weight: 600; font-size: 1.8rem; }
+    .cards { display: flex; flex-wrap: wrap; gap: 1.8rem; justify-content: center; }
+    .card { background: white; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 280px; overflow: hidden; transition: transform 0.3s ease; cursor: default; }
+    .card:hover { transform: translateY(-8px); box-shadow: 0 10px 25px rgba(255,127,80,0.3); }
+    .card img { width: 100%; height: 180px; object-fit: cover; display: block; }
+    .card-content { padding: 1rem 1.2rem; }
+    .card-content h3 { color: #ff7f50; margin-bottom: 0.5rem; font-weight: 600; font-size: 1.3rem; }
+    .card-content p { font-size: 0.95rem; color: #5a5a5a; line-height: 1.3; }
+    footer { background-color: #ff7f50; color: white; text-align: center; padding: 1rem 1rem; font-weight: 600; user-select: none; }
+    @media (max-width: 768px) {
+      .cards { flex-direction: column; align-items: center; }
+      nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 1rem; }
+      nav a { margin: 0; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Gastronomía del Mundo</h1>
+  <nav>
+    <a href="#america">América</a>
+    <a href="#asia">Asia</a>
+    <a href="#europa">Europa</a>
+    <a href="#africa">África</a>
+  </nav>
+</header>
+<main>
+  <section id="america">
+    <h2>América</h2>
+    <div class="cards">
+      <article class="card"><img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=600&q=80" alt="Tacos Mexicanos" /><div class="card-content"><h3>México - Tacos al Pastor</h3><p>Un platillo emblemático mexicano hecho con carne de cerdo marinada, piña y especias, servido en tortillas de maíz.</p></div></article>
+      <article class="card"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Asado Argentino" /><div class="card-content"><h3>Argentina - Asado</h3><p>Tradición culinaria argentina de carne asada lentamente a la parrilla, acompañada con chimichurri y verduras.</p></div></article>
+    </div>
+  </section>
+  <section id="asia">
+    <h2>Asia</h2>
+    <div class="cards">
+      <article class="card"><img src="https://images.unsplash.com/photo-1562967916-eb82221dfb3e?auto=format&fit=crop&w=600&q=80" alt="Sushi Japonés" /><div class="card-content"><h3>Japón - Sushi</h3><p>Delicada combinación de arroz avinagrado y pescado crudo, acompañada con wasabi y salsa de soja.</p></div></article>
+      <article class="card"><img src="https://images.unsplash.com/photo-1617191517726-d382f1d8e002?auto=format&fit=crop&w=600&q=80" alt="Curry Indio" /><div class="card-content"><h3>India - Curry</h3><p>Plato aromático con mezcla de especias que varía según la región, comúnmente preparado con pollo o vegetales.</p></div></article>
+    </div>
+  </section>
+  <section id="europa">
+    <h2>Europa</h2>
+    <div class="cards">
+      <article class="card"><img src="https://images.unsplash.com/photo-1542444459-8d7b31b2f9a2?auto=format&fit=crop&w=600&q=80" alt="Pizza Italiana" /><div class="card-content"><h3>Italia - Pizza Napolitana</h3><p>Fina base de masa con salsa de tomate, mozzarella fresca, albahaca y aceite de oliva.</p></div></article>
+      <article class="card"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Paella Española" /><div class="card-content"><h3>España - Paella</h3><p>Plato tradicional de arroz con azafrán, mariscos, pollo y verduras, típico de Valencia.</p></div></article>
+    </div>
+  </section>
+  <section id="africa">
+    <h2>África</h2>
+    <div class="cards">
+      <article class="card"><img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=600&q=80" alt="Tagine Marroquí" /><div class="card-content"><h3>Marruecos - Tagine</h3><p>Estofado cocido lentamente con carne, frutas secas y especias, en una olla de barro tradicional.</p></div></article>
+      <article class="card"><img src="https://images.unsplash.com/photo-1506807803488-8eafc153acb3?auto=format&fit=crop&w=600&q=80" alt="Jollof Rice Africano" /><div class="card-content"><h3>África Occidental - Jollof Rice</h3><p>Plato de arroz cocinado con tomate, cebolla y especias, muy popular en Nigeria, Ghana y otros países.</p></div></article>
+    </div>
+  </section>
+</main>
+<footer>
+  &copy; 2025 Gastronomía del Mundo | Creado con ❤️ por Tu Nombre
+</footer>
+</body>
+</html>
